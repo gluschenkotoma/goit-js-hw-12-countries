@@ -1,0 +1,23 @@
+<div class="card">
+
+    {{!-- название страны --}}
+    <h2 class="card-title">{{name}}</h2>
+
+    {{!-- разметка карточки --}}
+    <div class="card-body">
+        <p class="card-text"><span class="card-text-key">Capital:</span> {{capital}}</p>
+        <p class="card-text"><span class="card-text-key">Papulation:</span> {{population}}</p>
+        <p class="card-text"><span class="card-text-key">Languages:</span> </p>
+
+        <ul class="list-group card-text-key">
+            {{#each languages}}
+            <li class="list-group-item">{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    {{!-- флаг --}}
+    <div class="card-img">
+        <img src="{{flag}}" alt="{{capital}} flag" width="760" height="360">
+    </div>
+
+</div>

@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: normal;
+  color: rgb(255, 255, 255);
+  background-image: url('../images/pexels-cottonbro-6674146.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+}
+//================вся карточка c поиском====================
+
+.card {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// -----------------------------сама карточка---------------
+.card-found {
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//------------------ форма поиска---------------
+
+.input-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 40px;
+}
+
+.input-country {
+  box-sizing: border-box;
+  width: 485px;
+  border: 2px solid #dadada;
+  padding: 10px 25px 10px 65px;
+  margin: 0;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 14px;
+  height: 55px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+//------------------------название страны----------------
+.card-title {
+  font-size: 70px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+//----------------------описание страны------------------------
+.card-body {
+  width: 50%;
+  font-size: 30px;
+  padding-left: 70px;
+
+  .card-text-key {
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-weight: 400;
+  }
+}
+
+//----------------------------список языков----------------------
+.list-group-item {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+//-----------------------------флаг--------------------
+.card-img {
+  width: 50%;
+}
+
+//-----------------------------списоак стран --------------------
+.country-list {
+  margin-left: 360px;
+
+  .country-list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
